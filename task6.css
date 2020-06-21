@@ -1,0 +1,582 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+body{
+    overflow-x: hidden;
+
+}
+
+/* Classes used within Multiple elements */
+a{
+    text-decoration: none;
+}
+
+
+/* Navigation */
+
+.navigation{
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo{
+    width: 20%;
+    transition:  transform 2s;
+    transform: rotate(360deg);
+   
+}
+
+.logo img{
+    padding: 20px 10px 20px 30px;
+}
+
+
+.navLinks{
+    width: 52%;
+
+    padding: 35px 10px 20px 1px;
+    
+}
+
+.navLinks ul li{
+   display: inline;
+
+   
+}
+
+.active{
+    background-color: #1eb4ad;
+    padding: 38px 21px 39px 18px;
+    border-radius: 11px 9px 74px 65px;
+    
+}
+
+.navLinks li a{
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+
+.navBtnLinks{
+    width:34% ;
+  
+    display: flex;
+    padding: 28px 10px 20px 17px;
+}
+
+.ContactNoBtn{
+   width: 146px;
+   height: 34px;
+  background-color: whitesmoke;
+  padding: 9px;
+  display: flex;
+  color: black;
+}
+.ContactNoBtn img{
+    margin: -4px;
+}
+.ContactNoBtn p{
+    margin-left: 20px;
+}
+
+.EmailBtn{
+    color: black;
+    width: 242px;
+    height: 34px;
+   background-color: whitesmoke;
+   margin-left: 5px;
+   padding: 9px;
+  display: flex;
+}
+
+.EmailBtn img{
+    margin: -4px;
+}
+.EmailBtn p{
+    margin-left: 20px;
+}
+
+/* BANNER */
+.BannerImage{
+    background-image: url(IMG/banner.png);
+    background-attachment: fixed;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 350px;
+}
+
+.BannerText{
+    height: 220px;
+    width: 700px;
+    position: relative;
+    left: 346px;
+    top:270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.BannerHeading h1{
+    color: white;
+    font-size: 39px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.BannerParagraph p{
+    color: white;
+    font-size: 22px;
+    /* font-weight: bolder; */
+    margin-bottom: 30px;
+    padding-left: 38px;
+    text-transform: uppercase;
+}
+
+.BannerBtns{
+    display: flex;
+    width: 100%;
+    padding-left: 164px;
+
+}
+
+
+.ContactUsbtn button{
+    padding: 21px;
+    text-align: center;
+    border-radius: 76px;
+    background-color: #1eb4ad;
+    color: white;
+    border: none;
+    outline: none;
+    width: 164px;
+    cursor: pointer;
+    transition:  transform 2s;
+    transform: rotate(360deg);
+
+}
+
+.Payinvoicebtn button{
+    padding: 21px;
+    text-align: center;
+    border-radius: 76px;
+margin-left: 8px;
+background-color: #ce4839;
+color: white;
+border: none;
+outline: none;
+width: 164px;
+cursor: pointer;
+transition:  transform 2s;
+    transform: rotate(360deg);
+}
+
+.Ourwork{
+    width: 968px;
+    height: 400px;
+    position: relative;
+    top: 380px;
+    left: 193px;
+    display: flex;
+
+}
+
+.Ourmission{
+    height: 350px;
+    width: 452px;
+    background-color: #f0eee9;
+    margin-top: 50px;
+    box-shadow: -9px 0px 20px 6px grey;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding-right: 20px;
+}
+
+.Ourservices{
+    height: 400px;
+    width: 470px;
+    background-color: lightgray;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.Ourvalue{
+    height: 350px;
+    width: 452px;
+    background-color: #f0eee9;
+    margin-top: 50px;
+    box-shadow: -9px 0px 20px 6px grey;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+
+.Ourlogo{
+     position: relative;
+     left: 108px;
+     top: 28px;
+    
+}
+
+.Ourlogo img{
+    border: 2px dashed black;
+    border-radius: 50px;
+}
+
+.Ourheading{
+    position: relative;
+    top: 38px;
+    left: 80px;
+    color: teal;
+}
+
+.Ourheading h2{
+    text-transform: uppercase;
+}
+
+.Ourparagraph{
+      position: relative;
+      top: 50px;
+      width: 300px;
+     left: 30px;
+}
+
+.OurReadmoreBtn{
+   position: relative;
+   top: 90px;
+   left: 123px;
+}
+
+.OurReadmoreBtn button{
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    border: none;
+    outline: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* WHO WE ARE */
+
+.WhoweAre{
+    width: 100%;
+    height: 500px;
+    background-color: #f0eee9;
+    background-attachment: fixed;
+    margin-bottom: 40px;
+}
+
+
+.WhoweAreIMAGE{
+    width: 1024px;
+    height: 381px;
+    background-image: url(IMG/b2-img.png);
+    position: relative;
+    left: 162px;
+    top: 59px;
+    
+}
+
+.WhoweAreCONTENT{
+    width: 510px;
+    height: 380px;
+  
+}
+
+.WhoweAreCONTENT h2{
+    color: white;
+    text-transform: uppercase;
+   position: relative;
+   top: 50px;
+    left: 56px;
+}
+
+.WhoweAreCONTENT p{
+   
+    position: relative;
+    top: 70px;
+    left: 56;
+    left: 65px;
+    width: 399px;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    font-size: 16px;
+    color: white;
+}
+
+/* MEET OUR STAFF  */
+
+.MeetOurStaffHeading{
+  text-align: center;
+  color: teal;
+   
+}
+
+.MeetOurStaff{
+    display: flex;
+    width: 100%;
+    height: 314px;
+    margin-bottom: 20px;
+}
+
+.Box{
+    width: 255px;
+    height: 344px;
+    position: relative;
+    left: 168px;
+    margin: 10px;
+    position: relative;
+   
+
+}
+
+.Box img{
+    border-radius: 100px;
+    width: 162px;
+    height: 145px;
+    align-content: center;
+    left: 30px;
+    top: 20px;
+    position: relative;
+    border: 3px solid silver;
+}
+
+.Box h3{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    color: teal;
+    font-size: 20px;
+}
+
+.Box p{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+/* OUR CLIENT */
+
+.OurClient{
+    width: 100%;
+    height: 463px;
+    background-color: #f0eee9;
+}
+
+.OurClientHeading{
+    text-align: center;
+  color: teal;
+  position: relative;
+  top: 50px;
+}
+
+.OurClientContainer{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top: 80px;
+
+}
+
+.ClientBox{
+    width: 375px;
+   height: 325px;
+   position: relative;
+   left: 100px;
+   margin: 10px;
+ 
+}
+
+.MsgBox img{
+     position: absolute;
+
+
+}
+
+.MsgBox p{
+    position: relative;
+    top: 10px;
+    width: 330px;
+    left: 8px;
+}
+
+.ClientDetails{
+    width: 300px;
+    height: 100px;
+   
+    position: relative;
+    top: 60px;
+}
+
+.Clientlogo{
+    position: relative;
+    top: 30px;
+    float: left;
+
+}
+
+.Clientlogo img{
+  border-radius: 50px;
+}
+
+.ClientInfo{
+width: 300px;
+height: 100px;
+
+
+}
+
+.ClientInfo h4{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    color: teal;
+}
+
+.ClientInfo p{
+    position: relative;
+    top: 55px;
+    left: 18px;
+    color: tomato;
+}
+
+/* Four Logos */
+.FourLogosContainer{
+    display: flex;
+    width: 100%;
+    height: 120px;
+  
+}
+
+.Fourlogos{
+    width:250px;
+    height: 100px;
+
+    position: relative;
+    left: 100px;
+    top: 40px;
+    align-content: center;
+
+}
+
+.Footer{
+    display: flex;
+    width: 100%;
+    height: 390px;
+   flex-direction: column;
+
+}
+
+.footer1{
+    width: 100%;
+    height: 150px;
+    background-color: #0e5555;
+    display: flex;
+
+}
+
+.FvsLogo{
+    width: 200px;
+    height: 100px;
+
+    position: relative;
+    left: 100px;
+    top: 30px;
+}
+
+.SocialMediaLinks{
+    width: 200px;
+    height: 100px;
+   
+    margin-left: 800px;
+    position: relative;
+   display: flex;
+    top: 35px;
+   
+}
+
+.SocialMediaLinks img{
+    margin: 5px;
+}
+
+.footer2{
+    width: 100%;
+    height: 350px;
+    background-color: teal;
+    display: flex;
+    position: relative;
+    top: -2px;
+
+}
+
+.footerDetails{
+    width: 500px;
+    height: 300px;
+   
+    position: relative;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.footerDetails h3{
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.footerDetails h4{
+    color: white;
+   
+    font-size: 17px;
+    font-family: auto;
+}
+
+.contactus h5{
+    padding-top: 50px;
+  color: white;
+  font-size: 18px;
+}
+
+.footerDetails h3{
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.footerDetails p{
+    color: white;
+    font-size: 18px;
+}
+
+.location p{
+    padding-top: 50px;
+    margin: 5px;
+    
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color:  #0e5555;
+    padding-top: 10px;
+}
